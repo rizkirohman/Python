@@ -1,0 +1,8 @@
+Membuat variable
+
+Format dasar:
+nama_variable = tipe_data (value)
+
+Contoh:
+satu = ("Hello World") // output = Hello World
+dua  = (123) // output = 123
