@@ -1,0 +1,3 @@
+Untuk membuat komentar di Python caranya cukup dengan menggunakan simbol #
+
+print('Hello World') # tulisan ini tidak akan terlihat di terminal
