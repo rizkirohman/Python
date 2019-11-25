@@ -1,0 +1,69 @@
+def tambah(x, y):
+  return x + y
+
+def kurang(x, y):
+  return x - y
+
+def kali(x, y):
+  return x * y
+
+def bagi(x, y):
+  return x / y
+
+def tampilan():
+  print("Pilih Operasi: ")
+  print()
+  print("1. Tambah")
+  print("2. Kurang")
+  print("3. Kali")
+  print("4. Bagi")
+
+  print()
+
+  pilihan = input("Masukkan Pilihan(1/2/3/4): ")
+  print()
+  if (pilihan == '1') or (pilihan == '2') or (pilihan == '3') or (pilihan == '4'):
+    pass
+  else:
+    print("Pilihan operasi tidak tersedia")
+    print()
+    tampilan()
+  print()
+
+  bil1 = int(input("Masukkan bilangan pertama: "))
+  bil2 = int(input("Masukkan bilangan kedua: "))
+
+  print()
+
+  if pilihan == '1':
+    print(f"{bil1} + {bil2} = {tambah(bil1, bil2)}")
+
+  elif pilihan == '2':
+    print(f"{bil1} - {bil2} = {kurang(bil1, bil2)}")
+
+  elif pilihan == '3':
+    print(f"{bil1} * {bil2} = {kali(bil1, bil2)}")
+
+  elif pilihan == '4':
+    print(f"{bil1} / {bil2} = {bagi(bil1, bil2)}")
+
+print()
+
+tampilan()
+
+print()
+
+while True:
+  print()
+  print("Kembali ke kalkulator?")
+  print("1. Ya")
+  print("2. Tidak")
+  print()
+  pilihan = input("Pilih(1/2): ")
+  print()
+  if pilihan == '1':
+    tampilan()
+  elif pilihan == '2':
+    break
+  else:
+    print("Pilihan tidak tersedia")
